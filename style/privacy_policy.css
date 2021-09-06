@@ -1,0 +1,25 @@
+.main-area {
+    width: 65%;
+    margin: 10% auto;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top : -10px;
+}
+
+h2{
+    margin-top: 5%;
+}
+
+p{
+    text-align: justify;
+}
+
+.main-area li{
+    margin-left : 5%;
+    list-style-type: disc;
+    margin-top: 1%;
+}
