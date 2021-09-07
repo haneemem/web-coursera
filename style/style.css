@@ -29,7 +29,8 @@ ul {
 	display: block;
 }
 .main-nav a:hover {
-	color: #718daa;
+    color: black;
+    background-color: #fff;
 }
 .main-nav {
     display: flex;
@@ -163,6 +164,31 @@ a {
     font-weight: 600;
     font-size: 2rem;
 }
+
+
+/*----------------------social-------------*/
+.social-media{
+    background: #f8f9fa;
+    padding: 100px 0;
+}  
+.social-media p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.social-icons img{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+/*----------footer--------*/
+
+
 
 /****** Footer Section ********/
 
