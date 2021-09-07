@@ -150,13 +150,6 @@ ul {
     flex-wrap: wrap;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #005691;
-    text-decoration: none;
-    color: aliceblue;
-}
 a {
     text-decoration: none;
     color: white;
@@ -170,3 +163,35 @@ a {
     font-weight: 600;
     font-size: 2rem;
 }
+
+/****** Footer Section ********/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #005691;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer-box {
+    display : flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-box div a:hover {
+	color: #b8cce2;
+}
+
+@media(max-width: 600px) {
+    .footer-box {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+
+    .footer-box div {
+        margin : 0 auto 1% auto;
+    }
+  }
+/********************************/
