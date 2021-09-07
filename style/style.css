@@ -169,22 +169,41 @@ a {
 /*----------------------social-------------*/
 .social-media{
     background: #f8f9fa;
-    padding: 100px 0;
+    padding: 20px 0;
+    text-align: center;
 }  
 .social-media p{
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
 }
-.social-icons img{
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    width: 60px;
-    transition: 0.5s;
+.social-icons a{
+    color: #005691;
 }
-.social-icons a:hover img{
+
+.social-icons i{
+    font-size: 2rem;
+    padding: 1%;
+}
+
+.social-icons a:hover i{
     transform: translateY(-10px);
+}
+
+.fa-facebook {
+    color: #005691;
+}
+
+.fa-twitter {
+    color: rgb(40, 175, 233);
+}
+
+.fa-whatsapp {
+    color: rgb(9, 208, 39);
+}
+
+.fa-snapchat {
+    color: rgb(232, 206, 10);
 }
 /*----------footer--------*/
 
