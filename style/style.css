@@ -240,3 +240,24 @@ footer {
     }
   }
 /********************************/
+
+
+.links {
+    color: #005691;
+}
+
+#reference{
+    padding: 2%;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+table {
+    padding: 2%;
+    align-content: center;
+}
+
+td {
+    margin: 2%;
+}
