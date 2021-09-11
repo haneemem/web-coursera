@@ -1,0 +1,68 @@
+
+#reference{
+    padding: 2%;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.links{
+    color: #005691;
+    text-align: left;
+    padding: 30px;
+}
+.th{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    border: 1px solid #ddd;
+    padding: 4% 0;
+}
+tr{
+    transition: all .2s ease-in;
+}
+td{
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(odd){
+    background-color: white;
+    color: #005691;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    color: #005691;
+}
+tr:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+}
+
+#lectures{
+    padding: 3%;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#banner {
+    height: 50vh;
+}
+
+.content{
+    margin: 100px auto 0;
+}
+
+.overlay{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+p {
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+    font-size: 2rem;
+}
