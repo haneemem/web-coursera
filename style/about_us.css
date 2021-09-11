@@ -30,7 +30,7 @@ h1 {
 
 /************ Our Story ***********/
 #our-story {
-    background-color: aliceblue;
+    
     text-align: justify;
 }
 
@@ -46,3 +46,15 @@ h1 {
     max-height: 500px;
 }
 
+@media (max-width : 1000px) {
+    #our-story img{
+        height: auto; 
+        width: auto; 
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .world-class-all-cards {
+        flex-direction: column;
+        margin-left: auto;
+    }
+}
