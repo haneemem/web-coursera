@@ -1,0 +1,48 @@
+/********* World Class ***********/
+#world-class {
+    text-align: center;
+    margin : 5% auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.world-class-all-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin : 0 10% 5% 10%;
+}
+
+.world-class-cards img {
+    width : 50%;
+    height: 50%;
+}
+
+.world-class-cards {
+    width : 20%;
+}
+
+.world-class-cards p {
+    font-size: 80%;
+}
+
+/************ Our Story ***********/
+#our-story {
+    background-color: aliceblue;
+    text-align: justify;
+}
+
+#our-story div{
+    margin-right : 2%;
+    margin-left : 2%;
+}
+
+#our-story img {
+    height: auto; 
+    width: auto; 
+    max-width: 500px; 
+    max-height: 500px;
+}
+
