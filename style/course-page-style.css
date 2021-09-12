@@ -12,13 +12,16 @@
 }
 .th{
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
 }
 table {
+    margin: 0 auto;
     border-collapse: collapse;
     border-spacing: 0;
-    width: 90%;
+    width: 95%;
     border: 1px solid #ddd;
-    padding: 4% 0;
+    padding: 3% 0;
 }
 tr{
     transition: all .1s ease-in;
@@ -42,7 +45,7 @@ tr:hover{
 }
 
 #lectures{
-    padding: 3%;
+    padding: 2%;
     width: 75%;
     margin: 0 auto;
     justify-content: center;
@@ -65,4 +68,11 @@ p {
 
 input[type="checkbox"] {
     font-size: 2rem;
+}
+
+.fa-file-alt {
+    color: crimson;
+}
+.fa-film {
+    color:rgb(104, 201, 6);
 }

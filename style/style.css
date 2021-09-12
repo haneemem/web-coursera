@@ -121,7 +121,7 @@ ul {
     max-width: 100%;
     margin: 1% auto;
     overflow: auto;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 .card {
@@ -238,51 +238,41 @@ a {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     background-color: #005691;
     text-decoration: none;
     color: aliceblue;
 }
 
-.footer-box {
+footer p {
+    text-align: center;
+}
+
+.footer-links {
     display : flex;
     justify-content: space-around;
     align-items: baseline;
 }
 
-.footer-box div a:hover {
+.footer-links div a:hover {
 	color: #b8cce2;
 }
 
 @media(max-width: 600px) {
-    .footer-box {
-      /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .footer-box div {
+    .footer-links {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      
+    }
+
+    .footer-links div {
         margin : 0 auto 1% auto;
     }
   }
 /********************************/
 
-
-.links {
-    color: #005691;
-}
-
-#reference{
-    padding: 2%;
-    width: 75%;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-table {
-    padding: 2%;
-    align-content: center;
-}
-
-td {
-    margin: 2%;
-}
