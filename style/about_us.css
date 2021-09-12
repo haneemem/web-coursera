@@ -55,6 +55,6 @@ h1 {
     }
     .world-class-all-cards {
         flex-direction: column;
-        margin-left: auto;
+        margin:0 auto;
     }
 }
