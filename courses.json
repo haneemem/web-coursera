@@ -1,0 +1,103 @@
+[
+    {
+      "courseName": "html",
+      "resources": [
+        {
+            "Link" : "https://www.w3schools.com/html/",
+            "Title" : "W3 School"
+        },
+        {
+            "Link" : "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "Title" : "MDN Web Docs"
+        },
+        {
+            "Link" : "https://html.com",
+            "Title" : "HTML For Beginners The Easy Way"
+        }
+      ],
+      "shortVideos" : [
+        {
+            "Link" : "https://youtu.be/88PXJAA6szs",
+            "Title" : "HTML Tutorial For Beginners | Designing A Web Page Using HTML",
+            "Length" : "20 min"
+        },
+        {
+            "Link" : "https://youtu.be/bWPMSSsVdPk",
+            "Title" : "Learn HTML in 12 Minutes",
+            "Length" : "12 min"
+        }
+         
+      ],
+      "mediumVideos" : [
+        {
+            "Link" : "https://youtu.be/qz0aGYrrlhU",
+            "Title" : "HTML Tutorial for Beginners: HTML Crash Course [2021]",
+            "Length" : "70 min"
+        },
+        {
+            "Link" : "https://youtu.be/PlxWf493en4",
+            "Title" : "HTML Tutorial - How to Make a Super Simple Website",
+            "Length" : "60 min"
+        },
+        {
+            "Link" : "https://youtu.be/UB1O30fR-EE",
+            "Title" : "HTML Crash Course For Absolute Beginners",
+            "Length" : "60 min"
+        }
+
+      ],
+      "longVideos" : [
+          {
+            "Link" : "https://youtu.be/QXPWs00RD3A",
+            "Title" : "HTML Tutorial in Hindi | Complete HTML Course For Beginners to Advanced",
+            "Length" : "70 min"
+          },
+          {
+            "Link" : "https://youtu.be/pQN-pnXPaVg",
+            "Title" : "HTML Full Course - Build a Website Tutorial",
+            "Length" : "125 min"
+          }
+      ]
+
+    },
+    {
+        "courseName": "css",
+        "resources": [
+          "Radiation resistance",
+          "Turning tiny",
+          "Radiation blast"
+        ]
+    },
+    {
+        "courseName": "javascript",
+        "powers": [
+          "Radiation resistance",
+          "Turning tiny",
+          "Radiation blast"
+        ]
+    },
+    {
+        "courseName": "java",
+        "powers": [
+          "Radiation resistance",
+          "Turning tiny",
+          "Radiation blast"
+        ]
+    },
+    {
+        "courseName": "ajax",
+        "powers": [
+          "Radiation resistance",
+          "Turning tiny",
+          "Radiation blast"
+        ]
+    },
+    {
+        "courseName": "python",
+        "powers": [
+          "Radiation resistance",
+          "Turning tiny",
+          "Radiation blast"
+        ]
+    }
+]
