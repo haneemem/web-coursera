@@ -39,85 +39,64 @@
         </div>
     </section>
 
+    <?php
+        $str = file_get_contents('../courses.json');
+        $json = json_decode($str, true);
+    ?>
     <!-- Reference Section -->
-    
     <section id="reference">
         <div class="th">
             <h2>References</h2>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://www.w3schools.com/css/">W3 School</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://www.codecademy.com/learn/learn-css">Learn CSS</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://www.tutorialspoint.com/css/index.htm">CSS Tutorial</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
+            <?php foreach ($json['css']['resources'] as $x) {?>  
+                    <tr>
+                        <td><i class="fas fa-file-alt"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+            <?php } ?>
         </table>
     </section>
 
     <!-- Videos Section -->
-    
+
     <section id="lectures">
         <div class="th">
             <h2>Recorded Lectures</h2>
             <h3>Short Videos (Less than 30 min duration)</h3>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/1PnVor36_40">Learn CSS in 20 Minutes</a></td>
-                <td>20 min</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/0afZj1G0BIE">Learn CSS in 12 Minutes</a></td>
-                <td>12 min</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['css']['shortVideos'] as $x) {?>  
+                <tr>
+                    <td><i class="fas fa-film"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                    <td><?php echo $x['Length']?></td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+            <?php } ?>
         </table>
         <div class="th">
             <h3>Medium Videos (30 - 120 min duration)</h3>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/3_9znKVNe5g">CSS Tutorial For Beginners | CSS Crash Course In One Hour
-                </a></td>
-                <td>65 min</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/03Pvl2ecetA">CSS Tutorial for Beginners: Learn CSS in 1 Hour [2021]</a></td>
-                <td>85 min</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['css']['mediumVideos'] as $x) {?>  
+                <tr>
+                    <td><i class="fas fa-film"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                    <td><?php echo $x['Length']?></td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+            <?php } ?>
         </table>
         <div class="th">
             <h3>Long Videos (Greater than 120 min duration)</h3>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/yfoY53QXEnI">CSS Crash Course For Absolute Beginners
-                </a></td>
-                <td>125 min</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/pQN-pnXPaVg">CSS Tutorial - Zero to Hero (Complete Course)</a></td>
-                <td>380 min</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['css']['longVideos'] as $x) {?>  
+                <tr>
+                    <td><i class="fas fa-film"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                    <td><?php echo $x['Length']?></td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+            <?php } ?>
         </table>
     </section>
 
@@ -148,5 +127,6 @@
             
         </div>
     </footer>
+    
 </body>
 </html>

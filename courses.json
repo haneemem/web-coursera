@@ -1,5 +1,5 @@
-[
-  {
+{
+  "html" : {
       "courseName": "html",
       "resources": [
         {
@@ -26,7 +26,6 @@
             "Title" : "Learn HTML in 12 Minutes",
             "Length" : "12 min"
         }
-         
       ],
       "mediumVideos" : [
         {
@@ -44,7 +43,6 @@
             "Title" : "HTML Crash Course For Absolute Beginners",
             "Length" : "60 min"
         }
-
       ],
       "longVideos" : [
           {
@@ -60,7 +58,7 @@
       ]
 
     },
-  {
+  "css" : {
     "courseName": "css",
     "resources": [
       {
@@ -120,7 +118,7 @@
     ]
 
   },
-  {
+  "javascript" : {
     "courseName": "javascript",
     "resources": [
       {
@@ -132,77 +130,319 @@
           "Title" : "Eloquent JavaScript: A Modern Introduction to Programming"
       },
       {
-          "Link" : "https://html.com",
+          "Link" : "https://pepa.holla.cz/wp-content/uploads/2016/08/JavaScript-The-Definitive-Guide-6th-Edition.pdf",
           "Title" : "HTML For Beginners The Easy Way"
+      },
+      {
+          "Link" : "https://www.w3schools.com/js/",
+          "Title" : "w3schools"
       }
     ],
     "shortVideos" : [
       {
-          "Link" : "https://youtu.be/88PXJAA6szs",
-          "Title" : "HTML Tutorial For Beginners | Designing A Web Page Using HTML",
-          "Length" : "20 min"
+          "Link" : "https://youtu.be/900uz583XAQ",
+          "Title" : "How to download and install NODE JS (JavaScript) on windows 10 ",
+          "Length" : "6 mins 21 sec"
       },
       {
-          "Link" : "https://youtu.be/bWPMSSsVdPk",
-          "Title" : "Learn HTML in 12 Minutes",
-          "Length" : "12 min"
+          "Link" : "https://youtu.be/OTQSXQMZDgM",
+          "Title" : "Setup on Linux - JavaScript Programming",
+          "Length" : "7 mins 50 sec"
+      },
+      {
+          "Link" : "https://youtu.be/upDLs1sn7g4",
+          "Title" : "What is JavaScript?",
+          "Length" : "5 mins 11 sec"
+      },
+      {
+          "Link" : "https://youtu.be/Q6bY3FvBxMk",
+          "Title" : "Why Learn JavaScript ?",
+          "Length" : "8 mins 10 sec"
       }
        
     ],
     "mediumVideos" : [
       {
-          "Link" : "https://youtu.be/qz0aGYrrlhU",
-          "Title" : "HTML Tutorial for Beginners: HTML Crash Course [2021]",
-          "Length" : "70 min"
+          "Link" : "https://youtu.be/W6NZfCO5SIk",
+          "Title" : "JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour",
+          "Length" : "48 mins 16 sec"
       },
       {
-          "Link" : "https://youtu.be/PlxWf493en4",
-          "Title" : "HTML Tutorial - How to Make a Super Simple Website",
-          "Length" : "60 min"
-      },
-      {
-          "Link" : "https://youtu.be/UB1O30fR-EE",
-          "Title" : "HTML Crash Course For Absolute Beginners",
-          "Length" : "60 min"
+          "Link" : "https://youtu.be/vReDflV-_yU",
+          "Title" : "Full JavaScript Tutorial for Beginners",
+          "Length" : "1 hrs 17 mins"
       }
-
     ],
     "longVideos" : [
         {
-          "Link" : "https://youtu.be/QXPWs00RD3A",
-          "Title" : "HTML Tutorial in Hindi | Complete HTML Course For Beginners to Advanced",
-          "Length" : "70 min"
+          "Link" : "https://youtu.be/PkZNo7MFNFg",
+          "Title" : "Learn JavaScript - Full Course for Beginners",
+          "Length" : "3 hrs 26 mins"
         },
         {
-          "Link" : "https://youtu.be/pQN-pnXPaVg",
-          "Title" : "HTML Full Course - Build a Website Tutorial",
-          "Length" : "125 min"
+          "Link" : "https://youtu.be/jS4aFq5-91M",
+          "Title" : "JavaScript Programming - Full Course",
+          "Length" : "7 hrs 44 mins"
+        },
+        {
+          "Link" : "https://youtu.be/x4I4sUnhmgA",
+          "Title" : "Learn Advanced Javascript | Complete Web Developer Course",
+          "Length" : "3 hrs 43 mins"
+        },
+        {
+          "Link" : "https://youtu.be/3PHXvlpOkf4",
+          "Title" : "Build 15 JavaScript Projects - Vanilla JavaScript Course",
+          "Length" : "8 hrs 23 mins"
         }
     ]
 
   },
-  {
-      "courseName": "java",
-      "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
+  "java" : {
+    "courseName": "java",
+    "resources": [
+      {
+          "Link" : "https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/4951/Head_First_Java_Second_Edition.pdf",
+          "Title" : " Head First Java: A Brain-Friendly Guide (2nd Edition)"
+      },
+      {
+          "Link" : "https://kea.nu/files/textbooks/new/Effective%20Java%20%282017%2C%20Addison-Wesley%29.pdf",
+          "Title" : "Effective Java (3rd Edition)"
+      },
+      {
+          "Link" : "https://sd.blackball.lv/library/Thinking_in_Java_4th_edition.pdf",
+          "Title" : "Thinking in Java (4th Edition)"
+      },
+      {
+          "Link" : "https://www.w3schools.com/java/",
+          "Title" : "w3schools"
+      }
+    ],
+    "shortVideos" : [
+      {
+          "Link" : "https://youtu.be/IJ-PJbvJBGs",
+          "Title" : "How to Install Java JDK on Windows 10  ",
+          "Length" : "10 mins 31 sec"
+      },
+      {
+          "Link" : "https://youtu.be/mAtkPQO1FcA",
+          "Title" : "Java In 5 Minutes",
+          "Length" : "5 mins 11 sec"
+      },
+      {
+          "Link" : "https://youtu.be/2Xa3Y4xz8_s",
+          "Title" : "What is Java?",
+          "Length" : "6 mins"
+      }
+       
+    ],
+    "mediumVideos" : [
+      {
+          "Link" : "https://youtu.be/kJ0PKUMWnQI",
+          "Title" : "Java Programming | In One Video",
+          "Length" : "41 mins"
+      },
+      {
+          "Link" : "https://youtu.be/UmnCZ7-9yDY",
+          "Title" : "Java Tutorial for Beginners | Learn Java in 2 Hours",
+          "Length" : "2 hrs"
+      }
+    ],
+    "longVideos" : [
+        {
+          "Link" : "https://youtu.be/hBh_CC5y8-s",
+          "Title" : "Java Full Course | Java Tutorial for Beginners",
+          "Length" : "10 hrs 10 mins"
+        },
+        {
+          "Link" : "https://youtu.be/8cm1x4bC610",
+          "Title" : "Java Tutorial for Beginners | Full Course",
+          "Length" : "6 hrs 49 mins"
+        },
+        {
+          "Link" : "https://youtu.be/Ae-r8hsbPUo",
+          "Title" : "Advance Java Full Course",
+          "Length" : "4 hrs 13 mins"
+        }
+    ]
+
   },
-  {
-      "courseName": "ajax",
-      "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
+  "ajax" : {
+    "courseName": "ajax",
+    "resources": [
+      {
+          "Link" : "https://inspirit.net.in/books/html,%20css%20and%20javascript/AJAX%20-%20The%20Complete%20Reference.pdf",
+          "Title" : "AJAX: The Complete Reference (1st Edition)"
+      },
+      {
+          "Link" : "https://doc.lagout.org/programmation/Ajax/Ajax%20For%20Dummies%20%282006%29.pdf",
+          "Title" : "AJAX For Dummies (2nd Edition)"
+      },
+      {
+          "Link" : "https://campusbruxelles.files.wordpress.com/2014/02/asp-net-ajax-in-action_-alessandro-gallo-david-barkol-rama-vavilala-manning-2007-en.pdf",
+          "Title" : "ASP.NET AJAX in Action (3rd Edition)"
+      },
+      {
+          "Link" : "https://pepa.holla.cz/wp-content/uploads/2015/11/Ajax-The-Definitive-Guide.pdf",
+          "Title" : "AJAX: The Definitive Guide (2nd Edition)"
+      },
+      {
+          "Link" : "http://index-of.co.uk/HTML-CSS-AJAX-Javascript/Foundations%20Of%20Ajax%20(2006).pdf",
+          "Title" : "Foundations of AJAX (2nd Edition)"
+      },
+      {
+          "Link" : "https://www.w3schools.com/js/js_ajax_intro.asp",
+          "Title" : "W3 Shool"
+      }
+    ],
+    "shortVideos" : [
+      {
+          "Link" : "https://www.youtube.com/watch?v=VTpPNIX1JXc",
+          "Title" : "Introduction to AJAX",
+          "Length" : "6 mins 58 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=ugiFpA03B6c",
+          "Title" : "What is AJAX and How it Works",
+          "Length" : "11 mins 52 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=fLJItEI7TE0",
+          "Title" : "AJAX Crash Course",
+          "Length" : "18 mins 27 sec"
+      }
+       
+    ],
+    "mediumVideos" : [
+      {
+          "Link" : "https://www.youtube.com/watch?v=2QrLvmi0yhc",
+          "Title" : "AJAX Tutorial in One Video",
+          "Length" : "39 min 43 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=rJesac0_Ftw",
+          "Title" : "JSON and AJAX Tutorial",
+          "Length" : "40 mins 44 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=82hnvUYY6QA",
+          "Title" : "AJAX Crash Course",
+          "Length" : "1 hrs 9 min"
+      }
+    ],
+    "longVideos" : [
+        {
+          "Link" : "https://www.youtube.com/watch?v=tp3Gw-oWs2k&list=PLwmKknirUpOKfo40CRmjdPNh_I2joymh2",
+          "Title" : "Complete AJAX Tutorial",
+          "Length" : "2 hrs 30 mins"
+        },
+        {
+          "Link" : "https://www.youtube.com/watch?v=ACNGhBfNftA&list=PLgp11Hu-N4DT59rXjR57hhy6pMH3I2yHU",
+          "Title" : "AJAX Tutorial for Beginners and Professionals",
+          "Length" : "3 hrs 10 mins"
+        },
+        {
+          "Link" : "https://www.youtube.com/watch?v=44-D08_d-c8&list=PLwGdqUZWnOp3ZgLj8upMGSRSC1ezBfEZs",
+          "Title" : "Introduction to AJAX | Complete Tutorial",
+          "Length" : "4 hrs 36 mins"
+        },
+        {
+          "Link" : "https://www.youtube.com/watch?v=Ku9TQf-JSGc&list=PLHPcpp4e3JVpXbtgyD-k-nCmwpbbMIHOh",
+          "Title" : "AJAX Advanced Level Tutorial",
+          "Length" : "5 hrs 10 min"
+        }
+    ]
+
   },
-  {
-      "courseName": "python",
-      "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
+  "python" : {
+    "courseName": "python",
+    "resources": [
+      {
+          "Link" : "http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf",
+          "Title" : "Python for Everybody"
+      },
+      {
+          "Link" : "http://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-Cookbook-3rd-Edition.pdf",
+          "Title" : "Python Cookbook (3rd Edition)"
+      },
+      {
+          "Link" : "https://ixion.pld-linux.org/~arekm/free-books/programming/hadoop-with-python.pdf",
+          "Title" : "Hadoop with Python (1th Edition)"
+      },
+      {
+          "Link" : "https://pepa.holla.cz/wp-content/uploads/2016/10/functional-programming-python.pdf",
+          "Title" : "Functional Programming in Python (1st Edition)"
+      },
+      {
+          "Link" : "https://pepa.holla.cz/wp-content/uploads/2016/10/functional-programming-python.pdf",
+          "Title" : "Python in Education (2nd Edition)"
+      },
+      {
+          "Link" : "https://www.w3schools.com/python/",
+          "Title" : "W3 Shool"
+      }
+    ],
+    "shortVideos" : [
+      {
+          "Link" : "https://www.youtube.com/watch?v=uDbDIhR76H4",
+          "Title" : "How to Install Python on Windows 10",
+          "Length" : "5 mins 17 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=sKiDjO_0dCQ",
+          "Title" : "How to Install Python on Ubuntu",
+          "Length" : "12 mins 15 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=M323OL6K5vs",
+          "Title" : "How to Install Python on MAC OS",
+          "Length" : "9 mins 53 sec"
+      },
+      {
+        "Link" : "https://www.youtube.com/watch?v=WvhQhj4n6b8",
+        "Title" : "What is Python",
+        "Length" : "9 mins 37 sec"
+      }
+    ],
+    "mediumVideos" : [
+      {
+          "Link" : "https://www.youtube.com/watch?v=DcEfZeR71qg",
+          "Title" : "Python 3 Crash Course",
+          "Length" : "59 mins 57 sec"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=kqtD5dpn9C8",
+          "Title" : "Python for Beginners",
+          "Length" : "1 hrs"
+      },
+      {
+          "Link" : "https://www.youtube.com/watch?v=VchuKL44s6E",
+          "Title" : "Python as Fast as Possible",
+          "Length" : "1 hrs 19 min"
+      }
+    ],
+    "longVideos" : [
+        {
+          "Link" : "https://youtu.be/Ae-r8hsbPUo",
+          "Title" : "Python Tutorial | Python for Beginners",
+          "Length" : "6 hrs 14 mins"
+        },
+        {
+          "Link" : "https://www.youtube.com/watch?v=XKHEtdqhLK8",
+          "Title" : "Python Full Course | Beginner to Advanced",
+          "Length" : "6 hrs 49 mins"
+        },
+        {
+          "Link" : "https://www.youtube.com/watch?v=WGJJIrtnfpk",
+          "Title" : "Python Full Course | Learn Python in 12 Hours",
+          "Length" : "11 hrs 56 mins"
+        },
+        {
+          "Link" : "https://www.youtube.com/watch?v=pkYVOmU3MgA",
+          "Title" : "Data Structures and Algorithms in Python | For Beginners",
+          "Length" : "12 hrs 30 mins"
+        }
+    ]
+
   }
-]
+}
+

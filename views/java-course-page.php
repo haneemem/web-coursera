@@ -39,94 +39,64 @@
         </div>
     </section>
 
+    <?php
+        $str = file_get_contents('../courses.json');
+        $json = json_decode($str, true);
+    ?>
     <!-- Reference Section -->
-    
     <section id="reference">
         <div class="th">
             <h2>References</h2>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://www.rcsdk12.org/cms/lib/NY01001156/Centricity/Domain/4951/Head_First_Java_Second_Edition.pdf"> Head First Java: A Brain-Friendly Guide (2nd Edition)</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://kea.nu/files/textbooks/new/Effective%20Java%20%282017%2C%20Addison-Wesley%29.pdf">Effective Java (3rd Edition)</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://sd.blackball.lv/library/Thinking_in_Java_4th_edition.pdf">Thinking in Java (4th Edition)</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-file-alt"></i><a class="links" href="https://www.w3schools.com/java/">w3schools</a></td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['java']['resources'] as $x) {?>  
+                    <tr>
+                        <td><i class="fas fa-file-alt"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                        <td><input type="checkbox" name="" id=""></td>
+                    </tr>
+            <?php } ?>
         </table>
     </section>
 
     <!-- Videos Section -->
-    
+
     <section id="lectures">
         <div class="th">
             <h2>Recorded Lectures</h2>
             <h3>Short Videos (Less than 30 min duration)</h3>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/IJ-PJbvJBGs">How to Install Java JDK on Windows 10 </a></td>
-                <td>10 mins 31 sec</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/mAtkPQO1FcA">Java In 5 Minutes</a></td>
-                <td>5 mins 11 sec</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/2Xa3Y4xz8_s">What is Java?</a></td>
-                <td>6 mins</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['java']['shortVideos'] as $x) {?>  
+                <tr>
+                    <td><i class="fas fa-film"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                    <td><?php echo $x['Length']?></td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+            <?php } ?>
         </table>
         <div class="th">
             <h3>Medium Videos (30 - 120 min duration)</h3>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-film"></i><i class="fal fa-external-link"></i><a class="links" href="https://youtu.be/kJ0PKUMWnQI">Java Programming | In One Video</a></td>
-                <td>41 mins</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/UmnCZ7-9yDY">Java Tutorial for Beginners | Learn Java in 2 Hours</a></td>
-                <td>2 hrs</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['java']['mediumVideos'] as $x) {?>  
+                <tr>
+                    <td><i class="fas fa-film"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                    <td><?php echo $x['Length']?></td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+            <?php } ?>
         </table>
         <div class="th">
             <h3>Long Videos (Greater than 120 min duration)</h3>
         </div>
         <table>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/hBh_CC5y8-s">Java Full Course | Java Tutorial for Beginners</a></td>
-                <td>10 hrs 10 mins</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/8cm1x4bC610">Java Tutorial for Beginners | Full Course</a></td>
-                <td>6 hrs 49 mins</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><i class="fas fa-film"></i><a class="links" href="https://youtu.be/Ae-r8hsbPUo">Advance Java Full Course </a></td>
-                <td>4 hrs 13 mins</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-            
+            <?php foreach ($json['java']['longVideos'] as $x) {?>  
+                <tr>
+                    <td><i class="fas fa-film"></i><a class="links" href="<?php echo $x['Link'] ?>"><?php echo $x['Title'] ?></a></td>
+                    <td><?php echo $x['Length']?></td>
+                    <td><input type="checkbox" name="" id=""></td>
+                </tr>
+            <?php } ?>
         </table>
     </section>
 
@@ -157,5 +127,6 @@
             
         </div>
     </footer>
+    
 </body>
 </html>
