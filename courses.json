@@ -1,5 +1,5 @@
 [
-    {
+  {
       "courseName": "html",
       "resources": [
         {
@@ -60,44 +60,149 @@
       ]
 
     },
-    {
-        "courseName": "css",
-        "resources": [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
-        ]
-    },
-    {
-        "courseName": "javascript",
-        "powers": [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
-        ]
-    },
-    {
-        "courseName": "java",
-        "powers": [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
-        ]
-    },
-    {
-        "courseName": "ajax",
-        "powers": [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
-        ]
-    },
-    {
-        "courseName": "python",
-        "powers": [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
-        ]
-    }
+  {
+    "courseName": "css",
+    "resources": [
+      {
+          "Link" : "https://www.w3schools.com/css//",
+          "Title" : "W3 School"
+      },
+      {
+          "Link" : "https://developer.mozilla.org/en-US/docs/Web/CSS",
+          "Title" : "MDN Web Docs"
+      },
+      {
+          "Link" : "https://www.codecademy.com/learn/learn-css",
+          "Title" : "Learn CSS"
+      },
+      {
+          "Link" : "https://www.tutorialspoint.com/css/index.htm",
+          "Title" : "CSS Tutorial"
+      }
+    ],
+    "shortVideos" : [
+      {
+          "Link" : "https://youtu.be/1PnVor36_40",
+          "Title" : "Learn CSS in 20 Minutes",
+          "Length" : "20 min"
+      },
+      {
+          "Link" : "https://youtu.be/0afZj1G0BIE",
+          "Title" : "Learn CSS in 12 Minutes",
+          "Length" : "12 min"
+      }
+       
+    ],
+    "mediumVideos" : [
+      {
+          "Link" : "https://youtu.be/3_9znKVNe5g",
+          "Title" : "CSS Tutorial For Beginners | CSS Crash Course In One Hour",
+          "Length" : "65 min"
+      },
+      {
+          "Link" : "https://youtu.be/03Pvl2ecetA",
+          "Title" : "CSS Tutorial for Beginners: Learn CSS in 1 Hour [2021]",
+          "Length" : "85 min"
+      }
+
+    ],
+    "longVideos" : [
+        {
+          "Link" : "https://youtu.be/yfoY53QXEnI",
+          "Title" : "CSS Crash Course For Absolute Beginners",
+          "Length" : "125 min"
+        },
+        {
+          "Link" : "https://youtu.be/pQN-pnXPaVg",
+          "Title" : "CSS Tutorial - Zero to Hero (Complete Course)",
+          "Length" : "380 min"
+        }
+    ]
+
+  },
+  {
+    "courseName": "javascript",
+    "resources": [
+      {
+          "Link" : "https://wccftech.com/wp-content/uploads/2014/10/JavaScript.pdf",
+          "Title" : "A Smarter Way to Learn JavaScript"
+      },
+      {
+          "Link" : "https://eloquentjavascript.net/2nd_edition/Eloquent_JavaScript_small.pdf",
+          "Title" : "Eloquent JavaScript: A Modern Introduction to Programming"
+      },
+      {
+          "Link" : "https://html.com",
+          "Title" : "HTML For Beginners The Easy Way"
+      }
+    ],
+    "shortVideos" : [
+      {
+          "Link" : "https://youtu.be/88PXJAA6szs",
+          "Title" : "HTML Tutorial For Beginners | Designing A Web Page Using HTML",
+          "Length" : "20 min"
+      },
+      {
+          "Link" : "https://youtu.be/bWPMSSsVdPk",
+          "Title" : "Learn HTML in 12 Minutes",
+          "Length" : "12 min"
+      }
+       
+    ],
+    "mediumVideos" : [
+      {
+          "Link" : "https://youtu.be/qz0aGYrrlhU",
+          "Title" : "HTML Tutorial for Beginners: HTML Crash Course [2021]",
+          "Length" : "70 min"
+      },
+      {
+          "Link" : "https://youtu.be/PlxWf493en4",
+          "Title" : "HTML Tutorial - How to Make a Super Simple Website",
+          "Length" : "60 min"
+      },
+      {
+          "Link" : "https://youtu.be/UB1O30fR-EE",
+          "Title" : "HTML Crash Course For Absolute Beginners",
+          "Length" : "60 min"
+      }
+
+    ],
+    "longVideos" : [
+        {
+          "Link" : "https://youtu.be/QXPWs00RD3A",
+          "Title" : "HTML Tutorial in Hindi | Complete HTML Course For Beginners to Advanced",
+          "Length" : "70 min"
+        },
+        {
+          "Link" : "https://youtu.be/pQN-pnXPaVg",
+          "Title" : "HTML Full Course - Build a Website Tutorial",
+          "Length" : "125 min"
+        }
+    ]
+
+  },
+  {
+      "courseName": "java",
+      "powers": [
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+      ]
+  },
+  {
+      "courseName": "ajax",
+      "powers": [
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+      ]
+  },
+  {
+      "courseName": "python",
+      "powers": [
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+      ]
+  }
 ]

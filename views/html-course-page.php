@@ -43,7 +43,6 @@
     </section>
 
     <!-- Reference Section -->
-    
     <section id="reference">
         <div class="th">
             <h2>References</h2>
