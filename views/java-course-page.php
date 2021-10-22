@@ -40,6 +40,11 @@
     </section>
 
     <?php
+            session_start();
+
+            require "../enrolUser.php";
+            enroll_user('JAVA', $_SESSION['uname']);
+            
         $str = file_get_contents('../courses.json');
         $json = json_decode($str, true);
     ?>

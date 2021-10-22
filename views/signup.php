@@ -107,7 +107,7 @@ if(isset($_POST['uname'])) {
             }
             mysqli_close($conn);
             // require "index.php";
-            header("Location: index.php");
+            header("Location: login.php");
         }
         else{
         echo "<script>alert('$err_msg');</script>";

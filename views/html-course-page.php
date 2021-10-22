@@ -16,10 +16,10 @@
 <body>
     <!---------------- Navigation Bar --------------->
     <header>
-        <h1 class="logo"><a href="index.html">WebCoursera</a></h1>
+        <h1 class="logo"><a href="index.php">WebCoursera</a></h1>
       <ul class="main-nav">
-        <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Sign out</a></li>
+        <li><a href="index.php">Home</a></li>
+          <li><a href="login.php">Sign out</a></li>
       </ul>
         
     </header>
@@ -44,6 +44,12 @@
 
 
     <?php
+
+        session_start();
+
+        require "../enrolUser.php";
+        enroll_user('HTML', $_SESSION['uname']);
+
         $str = file_get_contents('../courses.json');
         $json = json_decode($str, true);
     ?>

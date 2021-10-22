@@ -9,30 +9,23 @@
     <link rel="stylesheet" href="../style/style.css">
     <title>Web Coursera</title>
 </head>
-<body>
-    <?php 
-        require_once "../connection.php";
-
-        $conn = connect_database();
-
-        // $sql = "INSERT INTO user (username, first_name, last_name, email, institute, hashed_pwd)
-        //     VALUES ('jd', 'John', 'Doe','jackd@gmail.com', 'johnexampleUniversity', 'abcd1234')";
-
-        // if (mysqli_query($conn, $sql)) {
-        //     echo "New record created successfully";
-        // } else {
-        //     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        // }
-  
-        mysqli_close($conn);
+<body onload="slider()">
+    <?php
+        session_start(); 
     ?>
     <!---------------- Navigation Bar --------------->
     <header>
         <h1 class="logo"><a href="#">WebCoursera</a></h1>
       <ul class="main-nav">
           <li><a href="#">Home</a></li>
-          <li><a href="login.html">Sign In</a></li>
+          <?php if(!isset($_SESSION['uname'])) {?>
+          <li><a href="login.php">Sign In</a></li>
           <li><a href="signup.php">Sign Up</a></li>
+          <?php } ?>
+          <?php if(isset($_SESSION['uname'])) {?>
+            <li><a href="logout.php">Sign out</a></li>
+          <?php } ?>
+          
       </ul>
         
     </header>
@@ -40,7 +33,7 @@
     <section id="banner">
         <div class="banner1">
             <div class="slider">
-                <img src="../assets/wall2.jpg" id="slideImg">
+                <img src="../assets/capture.jpg" id="slideImg">
             </div>
             <div class="overlay">
                 <div class="content">
@@ -57,37 +50,62 @@
 
     <!---------------- Courses Section ----------------->
 
+    <?php
+        require "../connection.php";
+        $conn = connect_database();
+
+        $qry = "SELECT c_name FROM course INNER JOIN enrollment ON (course.c_id = enrollment.c_id AND enrollment.username ='{$_SESSION['uname']}');";
+
+        $res = mysqli_query($conn, $qry);
+        $res = mysqli_fetch_all($res);
+        
+        $course_list = array();
+
+
+        foreach($res as $x => $x_value) {
+            array_push($course_list, $x_value[0]);
+        }
+        // if (in_array("JAVA", $course_list, TRUE))
+        // {
+        //     echo "found \n";
+        // }
+        // else
+        // {
+        //     echo "not found \n";
+        // }
+        mysqli_close($conn);
+    ?>
     <section class="main-area">
         <h1 class="course-heading">COURSES</h1>
         <div class="search-area">
             <input type="text" name="" id="" placeholder="Search For More">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
-        
         <div class="container flex">
             <div class="card">
                 <img src="../assets/service1.png" alt="">
-                <a href="../views/html-course-page.php"><button>Get Started</button></a>
+                
+                <a href="../views/html-course-page.php"><button><?php echo is_enrolled("HTML", $course_list); ?></button></a>
             </div>
             <div class="card">
                 <img src="../assets/service2.png" alt="">
-                <a href="../views/css-course-page.php"><button>Get Started</button></a>
+                <a href="../views/css-course-page.php"><button><?php echo is_enrolled("CSS", $course_list); ?></button></a>
             </div>
             <div class="card">
                 <img src="../assets/service3.png" alt="">
-                <a href="../views/js-course-page.php"><button>Get Started</button></a>
+                <a href="../views/js-course-page.php"><button><?php echo is_enrolled("JAVASCRIPT", $course_list); ?></button></a>
             </div>
             <div class="card">
                 <img src="../assets/service4.png" alt="">
-                <a href="../views/java-course-page.php"><button>Get Started</button></a>
+                <a href="../views/java-course-page.php"><button><?php echo is_enrolled("JAVA", $course_list); ?></button></a>
             </div>
             <div class="card">
                 <img src="../assets/service5.png" alt="">
-                <a href="../views/ajax-course-page.php"><button>Get Started</button></a>
+                <a href="../views/ajax-course-page.php"><button><?php echo is_enrolled("AJAX", $course_list); ?></button></a>
             </div>
             <div class="card">
                 <img src="../assets/service6.jpg" alt="">
-                <a href="../views/python-course-page.php"><button>Get Started</button></a>
+                <a href="../views/python-course-page.php"><button><?php echo is_enrolled("PYTHON", $course_list); ?></button></a>
             </div>
             
         </div>
@@ -132,5 +150,35 @@
             
         </div>
     </footer>
+    <?php 
+        function is_enrolled($check, $course_list){
+            if (in_array($check, $course_list, TRUE))
+            {
+                return "CONTINUE";
+            }
+            else
+            {
+                //echo "Enrol";
+                return "ENROLL NOW";
+            }
+        }
+    ?>
+    <script>
+        var slideImg=document.getElementById("slideImg");
+        var images = new Array(
+            "../assets/capture.jpg",
+            "../assets/capture2.jpeg"
+        );
+        var len = images.length
+        var i = 0;
+        function slider(){
+            if(i>len-1){
+                i=0;
+            }
+            slideImg.src=images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
 </body>
 </html>
