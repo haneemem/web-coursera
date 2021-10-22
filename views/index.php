@@ -10,13 +10,29 @@
     <title>Web Coursera</title>
 </head>
 <body>
+    <?php 
+        require_once "../connection.php";
+
+        $conn = connect_database();
+
+        // $sql = "INSERT INTO user (username, first_name, last_name, email, institute, hashed_pwd)
+        //     VALUES ('jd', 'John', 'Doe','jackd@gmail.com', 'johnexampleUniversity', 'abcd1234')";
+
+        // if (mysqli_query($conn, $sql)) {
+        //     echo "New record created successfully";
+        // } else {
+        //     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        // }
+  
+        mysqli_close($conn);
+    ?>
     <!---------------- Navigation Bar --------------->
     <header>
         <h1 class="logo"><a href="#">WebCoursera</a></h1>
       <ul class="main-nav">
           <li><a href="#">Home</a></li>
           <li><a href="login.html">Sign In</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="signup.php">Sign Up</a></li>
       </ul>
         
     </header>
