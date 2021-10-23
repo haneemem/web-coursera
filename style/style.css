@@ -112,7 +112,7 @@ ul {
 .search-area button {
     padding: 1px;
     border:2px solid #005691;
-    margin: 0 auto;
+    margin: 10px auto;
     text-decoration:none;
     color:#005691;
     text-align:center;
@@ -138,6 +138,9 @@ ul {
     font-size: 1rem;
 }
 
+/* .livesearch {
+    max-width: 55%;
+} */
 .container {
     max-width: 100%;
     margin: 1% auto;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+  <link>
+    <title>HTML</title>
+    <url>../views/html-course-page.php</url>
+  </link>
+  <link>
+    <title>AJAX</title>
+    <url>../views/ajax-course-page.php</url>
+  </link>
+  <link>
+    <title>CSS</title>
+    <url>../views/css-course-page.php</url>
+  </link>
+  <link>
+    <title>JAVA</title>
+    <url>../views/java-course-page.php</url>
+  </link>
+  <link>
+    <title>JAVASCRIPT</title>
+    <url>../views/js-course-page.php</url>
+  </link>
+  <link>
+    <title>PYTHON</title>
+    <url>../views/python-course-page.php</url>
+  </link>
+</pages>

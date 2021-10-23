@@ -29,7 +29,8 @@
             $sql = "SELECT e_id FROM enrollment WHERE( username= '{$username}' AND c_id = '{$course_id[0]}');";
             $res = mysqli_query($conn, $sql);
             $enrol_id = mysqli_fetch_row($res);
-            echo $enrol_id[0];
+            //echo $enrol_id[0];
+            mysqli_close($conn);
             return $enrol_id[0];
         }
     }

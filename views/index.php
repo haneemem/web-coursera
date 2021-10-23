@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/style.css">
     <title>Web Coursera</title>
+    <script>
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+        console.log(this.responseText);
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.width = "650px";
+      document.getElementById("livesearch").style.margin = "10px auto";
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","../livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
 </head>
 <body onload="slider()">
     <?php
@@ -18,6 +39,7 @@
         <h1 class="logo"><a href="#">WebCoursera</a></h1>
       <ul class="main-nav">
           <li><a href="#">Home</a></li>
+          <li><a href="members.php">MEMBERS</a></li>
           <?php if(!isset($_SESSION['uname'])) {?>
           <li><a href="login.php">Sign In</a></li>
           <li><a href="signup.php">Sign Up</a></li>
@@ -25,7 +47,6 @@
           <?php if(isset($_SESSION['uname'])) {?>
             <li><a href="logout.php">Sign out</a></li>
           <?php } ?>
-          
       </ul>
         
     </header>
@@ -78,7 +99,8 @@
     <section class="main-area">
         <h1 class="course-heading">COURSES</h1>
         <div class="search-area">
-            <input type="text" name="" id="" placeholder="Search For More">
+            <input type="text" onkeyup="showResult(this.value)">
+            <div id="livesearch"></div>
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
         <div class="container flex">
