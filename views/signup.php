@@ -51,7 +51,7 @@
             </div>
             <input type="submit" value="Sign Up">
             <div class="signup_link">
-                Already registered? <a href="#">Login</a>
+                Already registered? <a href="login.php">Login</a>
             </div>
         </for>
     </div>
