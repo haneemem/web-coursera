@@ -86,6 +86,11 @@
     </script>
 
     <!-- Reference Section -->
+    <div class="search-area">
+            <input type="text" onkeyup="showResult(this.value)">
+            <div id="livesearch"></div>
+            <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
     <section id="reference">
         <div class="th">
             <h2>References</h2>
@@ -169,6 +174,26 @@
             
         </div>
     </footer>
-    
+    <script>
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+        console.log(this.responseText);
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.width = "650px";
+      document.getElementById("livesearch").style.margin = "10px auto";
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","../livesearch-contents.php?q="+str+"&c_name=ajax",true);
+  xmlhttp.send();
+}
+</script>
 </body>
 </html>

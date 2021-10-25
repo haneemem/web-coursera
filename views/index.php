@@ -8,27 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style/style.css">
     <title>Web Coursera</title>
-    <script>
-function showResult(str) {
-  if (str.length==0) { 
-    document.getElementById("livesearch").innerHTML="";
-    document.getElementById("livesearch").style.border="0px";
-    return;
-  }
-  var xmlhttp=new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-        console.log(this.responseText);
-      document.getElementById("livesearch").innerHTML=this.responseText;
-      document.getElementById("livesearch").style.width = "650px";
-      document.getElementById("livesearch").style.margin = "10px auto";
-      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","../livesearch.php?q="+str,true);
-  xmlhttp.send();
-}
-</script>
 </head>
 <body onload="slider()">
     <?php
@@ -99,36 +78,37 @@ function showResult(str) {
     <section class="main-area">
         <h1 class="course-heading">COURSES</h1>
         <div class="search-area">
-            <input type="text" onkeyup="showResult(this.value)">
-            <div id="livesearch"></div>
+            <input type="text" placeholder="Search For More" onkeyup = "handleSearch(this.value);">
+            <!-- <div id="livesearch"></div> -->
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
         <div class="container flex">
-            <div class="card">
+        <div class="card" id = "html">
                 <img src="../assets/service1.png" alt="">
                 
                 <a href="../views/html-course-page.php"><button><?php echo is_enrolled("HTML", $course_list); ?></button></a>
             </div>
-            <div class="card">
+            <div class="card" id = "css">
                 <img src="../assets/service2.png" alt="">
                 <a href="../views/css-course-page.php"><button><?php echo is_enrolled("CSS", $course_list); ?></button></a>
             </div>
-            <div class="card">
+            <div class="card" id = "javascript">
                 <img src="../assets/service3.png" alt="">
                 <a href="../views/js-course-page.php"><button><?php echo is_enrolled("JAVASCRIPT", $course_list); ?></button></a>
             </div>
-            <div class="card">
+            <div class="card" id = "java">
                 <img src="../assets/service4.png" alt="">
                 <a href="../views/java-course-page.php"><button><?php echo is_enrolled("JAVA", $course_list); ?></button></a>
             </div>
-            <div class="card">
+            <div class="card" id = "ajax">
                 <img src="../assets/service5.png" alt="">
                 <a href="../views/ajax-course-page.php"><button><?php echo is_enrolled("AJAX", $course_list); ?></button></a>
             </div>
-            <div class="card">
+            <div class="card" id = "python">
                 <img src="../assets/service6.jpg" alt="">
                 <a href="../views/python-course-page.php"><button><?php echo is_enrolled("PYTHON", $course_list); ?></button></a>
             </div>
+            <h5 class="course-heading" style = "display : none" id = "notFound">No Result</h5>
             
         </div>
     </section>
@@ -200,6 +180,25 @@ function showResult(str) {
             slideImg.src=images[i];
             i++;
             setTimeout('slider()',3000);
+        }
+
+        function handleSearch(userText){
+            userText = userText.toLowerCase();
+            const courseElements = document.getElementsByClassName('card');
+            let found = false;
+            for(let i=0; i<courseElements.length; i++){
+                const courseName = courseElements[i].id;
+                if(!courseName.includes(userText))
+                    courseElements[i].style.display = 'none';
+                else{
+                    found = true;
+                    courseElements[i].style.display = 'unset';
+                }
+            }
+            if(!found)
+                document.getElementById('notFound').style.display = 'inline';
+            else
+                document.getElementById('notFound').style.display = 'none';
         }
     </script>
 </body>
